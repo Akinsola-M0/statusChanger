@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="65dp"
+        android:background="@drawable/shape"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="314dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="start|center_vertical"
+            android:padding="10dp"
+            android:text="Status"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="314dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:ems="10"
+            android:hint="change status"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="297dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bluebutton"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttoncircle"
+                android:text="" />
+
+            <Button
+                android:id="@+id/maroonbutton"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttoncirclemarron"
+                android:text="" />
+
+            <Button
+                android:id="@+id/greenbutton"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttoncirclegreen"
+                android:text="" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button"
+            android:text="send"
+            android:textColor="#FBF8F8" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
